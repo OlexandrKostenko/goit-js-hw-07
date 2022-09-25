@@ -21,11 +21,6 @@ function onGalleryContainerClick (evt) {
         return
     };
 
-    let gallery = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay:'250'});
-gallery.on('show.simplelightbox', function () {
-
-});
-
 window.addEventListener('keydown', onEsckeyPress);
 function onEsckeyPress (event) {
     const Esc_key_code = 'Escape';
@@ -35,3 +30,8 @@ function onEsckeyPress (event) {
        gallery.close();
     }
 }}
+
+let gallery = new SimpleLightbox('.gallery a', {captionsData:'alt', captionDelay:'250'});
+gallery.on('show.simplelightbox', function () {
+
+});
